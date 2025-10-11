@@ -13,45 +13,41 @@
 </head>
 
 <body>
-    <!-- ✅ Updated Header with Left-Aligned Name -->
-    <header style="padding: 20px;">
 
+    <!-- Header -->
+    <header style="padding: 20px;">
         <div style="text-align: center; margin-top: 30px;">
             <h1>Mokariya Yagnesh</h1>
-            <p> Data Analyst | SQL | Python | Power BI | Excel
-            </p>
+            <p>Data Analyst | SQL | Python | Power BI | Excel</p>
         </div>
-
         <button class="menu-toggle" onclick="toggleMenu()">☰</button>
     </header>
 
-
     <!-- Sidebar Menu -->
-    <header>
-        <div class="sidebar" id="sidebar">
-            <ul>
-                <li><a href="#home" onclick="toggleMenu()">Home </a></li>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#education" onclick="toggleMenu()">Education</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-    </header>
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#resume" onclick="window.location.href='index2.html'">Resume</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </div>
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
     <div id="typewriter"></div>
 
-
+    <!-- Home Section -->
+    <section class="course-section">
+     
     <section id="home">
         <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px;">
             <div class="image-container" style="flex: 1 1 200px; max-width: 250px;" onclick="flipCard(this)">
                 <div class="flip-inner">
                     <div class="flip-front">
-
                         <img src="photo1.jpeg" class="profile-image"
                             style="width: 100%; height: auto; border-radius: 10px;" alt="flip-inner">
-
                     </div>
                     <div class="flip-back">
                         <img src="photo2.jpeg" class="profile-image"
@@ -59,107 +55,219 @@
                     </div>
                 </div>
             </div>
-
+        </div>
     </section>
+    
 
+    <!-- About Section -->
+      <section class="course-section">
     <section id="about">
         <h2>About Me</h2>
-
-        </div>
         <div style="flex: 2 1 300px;">
             <p>I'm a data analyst with experience in transforming data into actionable insights using SQL, Python,
                 Excel, and BI tools. Passionate about solving problems and optimizing business decisions.</p>
         </div>
-        </div>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>I pursued my degree in <strong>Bachelor of Computer Science</strong> from <strong>Government Engineering
-                College, Rajkot</strong>. During my academic years, I built a solid foundation in data analysis,
-            statistics, and programming. My interest in analytics grew through coursework and hands-on project
-            experiences.</p>
-    </section>
-
-    <div class="skills-section">
-        <h2>My Skills</h2>
-
-        <div class="skill">
-            <div class="skill-name">Excel</div>
-            <div class="progress-bar">
-                <div class="progress html">90%</div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">Python</div>
-            <div class="progress-bar">
-                <div class="progress css">80%</div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">PowerBI</div>
-            <div class="progress-bar">
-                <div class="progress javascript">70%</div>
-            </div>
-        </div>
-
-
-        <div class="skill">
-            <div class="skill-name">HTML,css</div>
-            <div class="progress-bar">
-                <div class="progress python">85%</div>
-            </div>
-        </div>
-
-        <div class="skill">
-            <div class="skill-name">Data Visulization</div>
-            <div class="progress-bar">
-                <div class="progress react">65%</div>
-            </div>
-        </div>
-    </div>
-    <section id="resume">
-        <h2>Resume</h2>
+          
+        <div class="leftt">
+          <div class="star">
         <a href="cv.docx" download="">
-            <button type="button">📄 Download My Resume</button>
+
+            <button type="button" >Download My Resume</button>
         </a>
-    </section>
 
-    <section class="projects">
-        <h2>Projects</h2>
+        <a href="https://wa.me/919999999999" target="_blank">
+          
+          <button class="whatsapp-button"><i class="fas fa-chat"></i>Chat on WhatsApp</button>
+        </a>
+        <a href="https://wa.me/919999999999" target="_blank">
+          
+          <button class="whatsapp-button"><i class="fas fa-chat"></i>Chat on WhatsApp</button>
+        </a>
+        </div>
+        </div>
+ 
+
         
-            <li class="abc"><a href = "https://github.com/27239/Dashboard/raw/refs/heads/master/pratice.xlsx"><strong>Sales Dashboard (Exel):</strong></a>Interactive report tracking KPIs, sales trends, and
-                regional performance.</li>
-            <li class="abc"><strong>SQL Retail Analysis:</strong> Data insights from 1M+ rows using complex queries and joins.
-            </li>
-            <li class="abc"><strong>Customer Churn Analysis:</strong> Logistic regression in Python to predict customer churn
-                using
-                telecom data.</li>          
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="social-links">
-            <a href="mailto:mokariyay5@gmail.com" target = "_blank" class="social-icon" title="mail">
-             <i class="fas fa-envelope"></i>
-             </a>
-
-            <a href="https://www.linkedin.com/in/yagneshmokariya2710" target="_blank" class="social-icon linkedin"
-                title="LinkedIn">
+          <div class="social-links">
+            <a href="mailto:mokariyay5@gmail.com" target="_blank" class="social-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yagneshmokariya2710" target="_blank" class="social-icon linkedin" title="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
             <a href="https://github.com/27239" target="_blank" class="social-icon github" title="GitHub">
                 <i class="fab fa-github"></i>
             </a>
-            <a href="https://instagram.com/yagnesh_mokariya" target="_blank" class="social-icon instagram"
-                title="Instagram">
+            <a href="https://instagram.com/yagnesh_mokariya" target="_blank" class="social-icon instagram" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+    </section>
+    </section>
+
+    <!-- Education Section -->
+     <section class="course-section">
+    <section id="education" class="education-timeline">
+        <h2>Education</h2>
+        <p>I pursued my degree in <strong>Bachelor of Computer Science</strong> from <strong>Government Engineering
+                College, Rajkot</strong>. During my academic years, I built a solid foundation in data analysis,
+            statistics, and programming. My interest in analytics grew through coursework and hands-on project
+            experiences.</p>
+
+        <h2>🎓 My Education Journey</h2>
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Secondary School (10th Standard)</h3>
+                    <p class="timeline-institution">GSEB | 2018 – 2019</p>
+                    <p>Built a strong academic foundation in mathematics and science. Developed interest in technology and logical reasoning through early exposure to computers and coding basics.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Diploma in Computer Engineering</h3>
+                    <p class="timeline-institution">GTU University | 2019 – 2022</p>
+                    <p>Focused on mathematics, computer science, and statistics. Developed strong logical thinking.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Computer Engineering</h3>
+                    <p class="timeline-institution">GTU University | 2022 – 2025</p>
+                    <p>Completed Bachelor in Computer Engineering.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                     <span class="highlight-course"><h3>Online Certificate</h3></span>
+                    <p class="timeline-institution">Coursera, Udemy | 2025 – Present</p>
+                    <p>Completed courses in Data Analytics, Power BI, Python for Data Science, and Excel Automation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+
+    <!-- Skills Section -->
+     <section class="course-section">
+ 
+    <div class="skills-container">
+
+        <!-- Data Analyst Skills -->
+        <div class="skills-section">
+            <h2>Skills As Data Analyst</h2>
+
+            <div class="skill">
+                <div class="skill-name">Excel</div>
+                <div class="progress-bar">
+                    <div class="progress html">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="progress-bar">
+                    <div class="progress css">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">PowerBI</div>
+                <div class="progress-bar">
+                    <div class="progress javascript">70%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Web Scraping</div>
+                <div class="progress-bar">
+                    <div class="progress python">85%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Data Visualization</div>
+                <div class="progress-bar">
+                    <div class="progress react">65%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Skills -->
+        <div class="skills-section">
+            <h2>Professional Skills</h2>
+
+            <div class="skill">
+                <div class="skill-name">Critical Thinking</div>
+                <div class="progress-bar">
+                    <div class="progress html">90%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Documentation</div>
+                <div class="progress-bar">
+                    <div class="progress css">80%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Problem Solving</div>
+                <div class="progress-bar">
+                    <div class="progress javascript">70%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Communication of Insights</div>
+                <div class="progress-bar">
+                    <div class="progress python">85%</div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Data Interpretation</div>
+                <div class="progress-bar">
+                    <div class="progress react">65%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </section>
+
+    <!-- Contact Section -->
+  <section class="course-section">
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="mailto:mokariyay5@gmail.com" target="_blank" class="social-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/yagneshmokariya2710" target="_blank" class="social-icon linkedin" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/27239" target="_blank" class="social-icon github" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/yagnesh_mokariya" target="_blank" class="social-icon instagram" title="Instagram">
                 <i class="fab fa-instagram"></i>
             </a>
         </div>
     </section>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>Thank You</p>
     </footer>

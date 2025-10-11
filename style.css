@@ -1,3 +1,4 @@
+
    * {
        box-sizing: border-box;
    }
@@ -34,7 +35,8 @@
        animation: fadeInDown 1s ease-out;
        display: flex;
        justify-content: center;
-       z-index: 1001;
+       z-index: 1000;
+     
        position: relative;
    }
 
@@ -76,6 +78,7 @@
        margin-top: 30px;
        font-size: 1.6em;
        transition: color 0.3s ease;
+       
    }
 
    .image-container {
@@ -96,6 +99,50 @@
        border: 5px solid black;
        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
    }
+  .leftt {
+      text-align: left;
+      animation: pulse 2s infinite;
+      padding: 14px 36px;
+      gap: 20px;
+      
+      color: white;
+      border: none;
+      font-size: 18px;
+      border-radius: 60px;
+      cursor: pointer;
+      transition: 
+        
+        transform 0.3s ease,
+        box-shadow 0.4s ease;
+    }
+
+    .leftt:hover {
+      
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(41, 128, 185, 0.6);
+    }
+
+    .leftt:active {
+      transform: scale(0.98);
+    }
+    
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+   
+  }
+  70% {
+    transform: scale(1.05);
+    
+  }
+  100% {
+    transform: scale(1);
+    
+  }
+}
+
 
 
 
@@ -156,7 +203,7 @@
        position: fixed;
        top: -25px;
        right: 20px;
-       z-index: 1001;
+       z-index: 1101;
        background-color: #333;
        color: #fff;
        padding: 10px 15px;
@@ -212,11 +259,29 @@
        color: #333;
    }
 
+   .course-section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+
+   }
+   /* Highlight effect on hover */
+.course-section:hover {
+  background-color: #e6f7ff; /* Light blue highlight */
+  transform: scale(1.02);    /* Slight zoom effect */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
 
 
 
 
-   /* Resume Button */
+
+
+
    button {
        padding: 10px 20px;
        font-size: 1em;
@@ -292,82 +357,149 @@
        color: #24292e;
    }
 
-   .skills-section {
-     
-       max-width: 600px;
-       margin: auto;
-   }
+  /* Container for both skill sections */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 
-   h2 {
-       text-align: center;
-       margin-bottom: 30px;
-   }
+/* Each individual skill section */
+.skills-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 10px;
+}
 
-   .skill {
-       border: 3px solid #090a09;
-       border-radius: 15px;
-       padding: 20px;
-       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-       font-weight: bold;
-       margin-bottom: 20px;
-   }
+/* Section title */
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-   .skill-name {
-       margin-bottom: 5px;
-       font-weight: bold;
-   }
+/* Individual skill box */
+.skill {
+  border: 3px solid #090a09;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
 
-   .progress-bar {
-       height: 20px;
-       background: #ddd;
-       border-radius: 10px;
-       overflow: hidden;
-   }
+/* Skill name text */
+.skill-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-   .progress {
-       height: 100%;
-       text-align: right;
-       padding-right: 10px;
-       line-height: 20px;
-       color: white;
-       font-size: 12px;
-       border-radius: 10px;
-   }
+/* Bar background */
+.progress-bar {
+  height: 20px;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
 
-   .html {
-       width: 90%;
-       background-color: #e44d26;
-   }
+/* Filled part of the bar */
+.progress {
+  height: 100%;
+  text-align: right;
+  padding-right: 10px;
+  line-height: 20px;
+  color: white;
+  font-size: 12px;
+  border-radius: 10px;
+}
 
-   .css {
-       width: 80%;
-       background-color: #264de4;
-   }
+/* Skill-specific progress bar styles */
+.html {
+  width: 90%;
+  background-color: #e44d26;
+}
 
-   .javascript {
-       width: 70%;
-       background-color: #f0db4f;
-       color: #000;
-   }
+.css {
+  width: 80%;
+  background-color: #264de4;
+}
 
-   .python {
-       width: 85%;
-       background-color: #306998;
-   }
+.javascript {
+  width: 70%;
+  background-color: #f0db4f;
+  color: #000;
+}
 
-   .react {
-       width: 65%;
-       background-color: #61DBFB;
-       color: #000;
-   }
-    .abc{
-       border: 3px solid #090a09;
-       border-radius: 15px;
-       padding: 20px;
-       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-       font-weight: bold;
+.python {
+  width: 85%;
+  background-color: #306998;
+}
 
-   }
+.react {
+  width: 65%;
+  background-color: #61DBFB;
+  color: #000;
+}
+
+/* Responsive adjustments (optional but good to have) */
+@media (max-width: 768px) {
+  .skills-section h2 {
+    font-size: 20px;
+  }
+
+  .skill {
+    padding: 15px;
+  }
+
+  .skill-name {
+    font-size: 14px;
+  }
+
+  .progress {
+    font-size: 10px;
+    padding-right: 8px;
+  }
+
+  .progress-bar {
+    height: 18px;
+  }
+}
+/* Responsive Design for smaller screens */
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .skill {
+        padding: 15px;
+    }
+
+    .skill-name {
+        font-size: 14px;
+    }
+
+    .progress {
+        font-size: 10px;
+        padding-right: 8px;
+    }
+
+    .progress-bar {
+        height: 18px;
+    }
+}
+.abc {
+    border: 3px solid #090a09;
+    border-radius: 15px;
+    padding: 20px; /* Match .skill padding */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    font-weight: bold;
+    margin-bottom: 20px; /* Add spacing like .skill */
+    background-color: #fff; /* Optional: for visual consistency */
+}
+
 
    /* Footer */
    footer {
@@ -379,6 +511,86 @@
        animation: fadeInUp 1.5s ease;
        font-size: 0.9em;
    }
+
+   .education-timeline {
+  padding: 50px 20px;
+  background: #f5f5f5;
+  text-align: center;
+}
+
+.education-timeline h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+color: #0077b5;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  padding-left: 20px;
+  border-left: 3px solid #333;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -10px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  background-color: #2e86de;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px #2e86de66;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.timeline-institution {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0 10px;
+}
+
+.timeline-content p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline {
+    padding-left: 10px;
+    border-left: 2px solid #aaa;
+  }
+
+  .timeline-item {
+    padding-left: 20px;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+    left: -7px;
+  }
+
+  .education-timeline h2 {
+    font-size: 1.5rem;
+  }
+}
+
 
    /* ================= Animations ================== */
    @keyframes fadeIn {
